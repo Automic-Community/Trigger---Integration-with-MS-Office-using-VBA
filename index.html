@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="http://50df39cf1ff06ee2b590-6135bed6c599dc7ad437e065c1d165d2.r46.cf1.rackcdn.com/stylesheets/stylesheet.css">
+    
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    
+    <!-- Star Rating JS -->
+    <script src="http://50df39cf1ff06ee2b590-6135bed6c599dc7ad437e065c1d165d2.r46.cf1.rackcdn.com/javascripts/star-rating.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="http://50df39cf1ff06ee2b590-6135bed6c599dc7ad437e065c1d165d2.r46.cf1.rackcdn.com/stylesheets/star-rating.min.css">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://b51a8ff2cfb1f3fc06d7-6135bed6c599dc7ad437e065c1d165d2.ssl.cf1.rackcdn.com/stylesheets/custom_front.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" media="all" href="https://b51a8ff2cfb1f3fc06d7-6135bed6c599dc7ad437e065c1d165d2.ssl.cf1.rackcdn.com/stylesheets/automic.css">
+
+    <title>Trigger - Integration with MS Office using VBA</title>
+    
+  </head>
+
+
+<body id="ghpages">
+<div id="wrapper">
+<div id="header">
+<header>
+
+<div role="navigation" class="navbar navbar-default navbar-fixed-top" id="nav-strip">
+	<div class="bottom-nav ">
+	  <div class="row">
+	    <div class="container">
+              <dl class="dropdown nav navbar-nav navbar-right">
+                <div class="dp"></div>
+              </dl> 
+	      <div class="col-sm-3">
+		<a class="navbar-brand" href="http://www.automic.com/">
+		  
+		  <img class="image-logo" src="https://a5616ff0bb354f2460a0-9c1a2e36fc783cc4c58ab6184c27cf6b.ssl.cf1.rackcdn.com/white_logo.png" alt="">
+		  
+		</a>
+	      </div>
+	      <div class="col-sm-9">
+		<div class="navbar-header">
+		  <button data-target=".topheader" data-toggle="collapse" class="navbar-toggle" type="button">
+		    <span class="sr-only">Toggle navigation</span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		  </button>
+		</div>
+		<div style=" position: relative; top: 20px;" class="navbar-collapse topheader collapse">
+                  <!--/ 	<span class="glyphicon glyphicon-user start"></span>-->
+                    <ul class="nav navbar-nav front">
+					  <li class="m-home"><a href="https://marketplace.automic.com" target="_blank">Marketplace</a></li>
+                      <li><a href="http://docs.automic.com" target="_blank">Documentation</a></li>
+                      <li><a href="https://community.automic.com" target="_blank">Community</a></li>
+                    </ul>
+		</div><!--/.nav-collapse -->
+              </div><!--/.span-12 -->
+	    </div><!--/.row -->
+	  </div>
+      </div>
+</div>
+   
+</header>
+</div>
+
+ <!-- MAIN CONTENT -->
+    <div id="content">
+      <div class="container">
+
+          
+	<div class="row">
+	  <div>
+	    <h1>Trigger - Integration with MS Office using VBA</h1>
+	  </div>
+	</div>
+	<div class="row">
+	  <div>
+	    <h2>We have created some VBA libraries (.bas and .cls) in order to ease the use of DUAS triggers for any external system development using VBA.</h2>
+	  </div>    
+	</div>
+      </div>
+    
+      <div class="container main_body">
+	<div class="row">
+	  
+	  <div class="col-md-8">
+	      <div class="row tabs">
+	      <ul class="nav nav-tabs">
+		<li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
+		<li><a href="#contents" data-toggle="tab">Contents</a></li>
+		<li><a href="#compatibility" data-toggle="tab">Compatibility</a></li>
+		<li><a href="#credits" data-toggle="tab">Credits</a></li>
+	      </ul>
+	      
+	    <!-- Tab contents -->  
+	    <div class="tab-content"> 
+	      <div id="overview" class="tab-pane active">
+		<div class="row">
+		  <div class="col-md-12 description">
+		    <h3>Description</h3>
+		    <p><div class="ipsType_textblock ipsPad_half description_content"><strong class="bbc"><span>Introduction</span></strong><br /><span><span><span>We have created some VBA libraries (.bas and .cls) in order to ease the use of DUAS triggers for any external system development using VBA.</span></span></span><br /><br /><strong class="bbc"><span><span><span>Prerequisites</span></span></span></strong><br /><span><span>In Office 2010, you will need to add the "Microsoft Scripting Runtime" and "Microsoft ActiveX Data Objects 2.8 library" as references via Tools &gt; References in the VBA editor.</span></span><br /><span><span><span>You will also need to </span></span></span><strong class="bbc">import those 2 external librarie</strong><span><span><span>s:</span></span></span>
+<ul class="bbc">
+<li><span><strong class="bbc">JSON</strong>.bas (from the <a class="bbc_url" title="External link" href="http://www.ediy.co.nz/vbjson-json-parser-library-in-vb6-xidc55680.html" rel="nofollow external">VBJson</a> library)</span></li>
+<li><span><strong class="bbc">cStringBuilder</strong>.cls (from the <a class="bbc_url" title="External link" href="http://www.ediy.co.nz/vbjson-json-parser-library-in-vb6-xidc55680.html" rel="nofollow external">VBJson</a> library)</span></li>
+</ul>
+<strong class="bbc"><span>Quick Start</span></strong><br /><span>Use the full example file to try this example with Excel. </span><br /><span>If you need to include the code in your existing VBA project you can i<span><span>mport these modules:</span></span></span>
+<ul class="bbc">
+<li><span><strong class="bbc">DUASApi.bas</strong></span></li>
+<li><span><strong class="bbc">DUASApiParam.cls</strong></span></li>
+<li><span><strong class="bbc">DUASApiRespObj.cls</strong></span></li>
+<li><span><strong class="bbc">DUASApiRespObjElmt.cls</strong></span></li>
+</ul>
+<strong class="bbc"><span>Description</span></strong><br /><span><span><span>Here is a sample of code showing how to use the libraries. </span></span></span><br /><span><span><span>In the example below :</span></span></span>
+<ul class="bbc">
+<li><span><span><span>We first login to the Dollar Universe API and retrieve the token</span></span></span></li>
+<li><span><span><span>We send an event</span></span></span></li>
+<li><span><span><span>We log out</span></span></span></li>
+</ul>
+<pre class="prettyprint lang-auto linenums:0 prettyprinted"><span class="typ">Sub</span><span class="pln"> </span><span class="typ">Button1_Click</span><span class="pun">()</span><span class="pln">
+</span><span class="pun">...</span><span class="pln">
+</span><span class="str">' Login to the DUAS API
+Set resp = DUASApi.loginDUASApi(host, port, login, pwd)
+DUASApi.displayResponseInMsgBox resp
+If resp.status = "success" Then
+
+token = resp.token
+
+'</span><span class="pln"> </span><span class="typ">Triggers</span><span class="pln"> an </span><span class="kwd">event</span><span class="pln"> to DUAS
+</span><span class="typ">Set</span><span class="pln"> resp </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DUASApi</span><span class="pun">.</span><span class="pln">triggerEventDUASApi</span><span class="pun">(</span><span class="pln">host</span><span class="pun">,</span><span class="pln"> port</span><span class="pun">,</span><span class="pln"> token</span><span class="pun">,</span><span class="pln"> eventType</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">params</span><span class="pun">)</span><span class="pln">
+</span><span class="typ">DUASApi</span><span class="pun">.</span><span class="pln">displayResponseInMsgBox resp
+
+</span><span class="str">' Logout from DUAS API
+Set resp = DUASApi.logoutDUASApi(host, port, token)
+DUASApi.displayResponseInMsgBox resp
+
+End If
+...
+End Sub</span></pre>
+<br /><span><strong class="bbc">List of functions</strong></span><br /><br /><span><span><span>Here's a list of all the functions from <strong class="bbc">DUASApi.bas</strong> that you can use:</span></span></span><br /><span><span><span><span><span><span> <br /><br /></span></span></span></span></span></span>
+<pre class="prettyprint lang-auto linenums:0 prettyprinted"><span class="str">' Logins to the Dollar Universe API with a HTTP request
+'</span><span class="pln">
+</span><span class="str">' Parameters
+'</span><span class="pln"> host </span><span class="typ">The</span><span class="pln"> hostname of your DUAS server
+</span><span class="str">' port The port number of your DUAS server
+'</span><span class="pln"> login login to connect to the </span><span class="typ">Dollar</span><span class="pln"> </span><span class="typ">Universe</span><span class="pln"> API
+</span><span class="str">' pwd password to connect to the Dollar Universe API
+'</span><span class="pln">
+</span><span class="str">' Returns: a structure containing all the information of the Dollar Universe API response
+'</span><span class="pln">
+</span><span class="typ">Public</span><span class="pln"> </span><span class="typ">Function</span><span class="pln"> loginDUASApi</span><span class="pun">(</span><span class="typ">ByVal</span><span class="pln"> host </span><span class="typ">As</span><span class="pln"> </span><span class="typ">String</span><span class="pun">,</span><span class="pln"> </span><span class="typ">ByVal</span><span class="pln"> port </span><span class="typ">As</span><span class="pln"> </span><span class="typ">String</span><span class="pun">,</span><span class="pln"> _
+</span><span class="typ">ByVal</span><span class="pln"> login </span><span class="typ">As</span><span class="pln"> </span><span class="typ">String</span><span class="pun">,</span><span class="pln"> </span><span class="typ">ByVal</span><span class="pln"> pwd </span><span class="typ">As</span><span class="pln"> </span><span class="typ">String</span><span class="pun">)</span><span class="pln"> </span><span class="typ">As</span><span class="pln"> </span><span class="typ">DUASApiRespObj</span></pre>
+<br /><span><span><span><span><span> </span></span></span></span></span><br /><span><span><span>Logs you in to the Dollar Universe API and returns a DUASApiRespObj which contains the return status and the <strong class="bbc">authentication token</strong> if status is successfull</span></span></span><span><span><span><span> <br /><br /></span></span></span></span>
+<pre class="prettyprint lang-auto linenums:0 prettyprinted"><span class="str">' Triggers an event on DUAS via the Dollar Universe API with an HTTP request
+'</span><span class="pln">
+</span><span class="str">' Parameters
+'</span><span class="pln"> host </span><span class="typ">The</span><span class="pln"> hostname of your DUAS server
+</span><span class="str">' port The port number of your DUAS server
+'</span><span class="pln"> token </span><span class="typ">The</span><span class="pln"> authentication token of your </span><span class="typ">Dollar</span><span class="pln"> </span><span class="typ">Universe</span><span class="pln"> API session
+</span><span class="str">' eventType The event type defined in your trigger object in DUAS
+'</span><span class="pln"> </span><span class="kwd">params</span><span class="pln"> </span><span class="typ">The</span><span class="pln"> list of parameters </span><span class="kwd">defined</span><span class="pln"> </span><span class="kwd">in</span><span class="pln"> your trigger </span><span class="kwd">object</span><span class="pln"> </span><span class="kwd">in</span><span class="pln"> DUAS
+</span><span class="str">'
+'</span><span class="pln"> </span><span class="typ">Returns</span><span class="pun">:</span><span class="pln"> a structure containing all the information of the </span><span class="typ">Dollar</span><span class="pln"> </span><span class="typ">Universe</span><span class="pln"> API response
+</span><span class="str">'
+Public Function triggerEventDUASApi(ByVal host As String, ByVal port As String, _
+ByVal token As String, ByVal eventType As String, ByVal params As Collection) As DUASApiRespObj</span></pre>
+<br /><span><span><span>Sends an event to the Dollar Universe API: you need to provide the authentication token, the event type, and a list of optional parameters defined in your trigger.</span></span></span><br /><span><span></span></span><br />
+<pre class="prettyprint lang-auto linenums:0 prettyprinted"><span class="str">'
+'</span><span class="pln"> </span><span class="typ">Logout</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> the </span><span class="typ">Dollar</span><span class="pln"> </span><span class="typ">Universe</span><span class="pln"> API </span><span class="kwd">with</span><span class="pln"> an HTTP request
+</span><span class="str">'
+'</span><span class="pln"> </span><span class="typ">Parameters</span><span class="pln">
+</span><span class="str">' host The hostname of your DUAS server
+'</span><span class="pln"> port </span><span class="typ">The</span><span class="pln"> port number of your DUAS server
+</span><span class="str">' token The authentication token of your Dollar Universe API session
+'</span><span class="pln">
+</span><span class="str">' Returns: a structure containing all the information of the Dollar Universe API response
+'</span><span class="pln">
+</span><span class="typ">Public</span><span class="pln"> </span><span class="typ">Function</span><span class="pln"> logoutDUASApi</span><span class="pun">(</span><span class="typ">ByVal</span><span class="pln"> host </span><span class="typ">As</span><span class="pln"> </span><span class="typ">String</span><span class="pun">,</span><span class="pln"> </span><span class="typ">ByVal</span><span class="pln"> port </span><span class="typ">As</span><span class="pln"> </span><span class="typ">String</span><span class="pun">,</span><span class="pln"> </span><span class="typ">ByVal</span><span class="pln"> token </span><span class="typ">As</span><span class="pln"> </span><span class="typ">String</span><span class="pun">)</span><span class="pln"> </span><span class="typ">As</span><span class="pln"> </span><span class="typ">DUASApiRespObj</span></pre>
+<br /><span><span><span> </span></span></span><br /><span><span><span>Logs you out of the Dollar Unvierse API; it basically revokes the authentication token that you give as parameter</span></span></span><br /><span><span><span><span><span><span> <br /><br /><span></span></span></span></span></span></span></span>
+<pre class="prettyprint lang-auto linenums:0 prettyprinted"><span class="str">'
+'</span><span class="pln"> </span><span class="typ">Displays</span><span class="pln"> </span><span class="kwd">in</span><span class="pln"> a </span><span class="typ">MsgBox</span><span class="pln"> the structure containing all the information of an HTTP response </span><span class="kwd">from</span><span class="pln"> the </span><span class="typ">Dollar</span><span class="pln"> </span><span class="typ">Unvierse</span><span class="pln"> API
+</span><span class="str">'
+'</span><span class="pln"> </span><span class="typ">Parameters</span><span class="pln">
+</span><span class="str">' resp structure containing all the information of the Dollar Universe API response
+'</span><span class="pln">
+</span><span class="typ">Public</span><span class="pln"> </span><span class="typ">Sub</span><span class="pln"> displayResponseInMsgBox</span><span class="pun">(</span><span class="typ">ByVal</span><span class="pln"> resp </span><span class="typ">As</span><span class="pln"> </span><span class="typ">DUASApiRespObj</span><span class="pun">)</span></pre>
+<br /><span><span><span><span><span> </span></span></span></span></span><br /><span><span><span>Displays as a MsgBox a response object from the Dollar Universe API</span></span></span><br /><br /><span><span><span><span> <br /></span></span></span></span>
+<pre class="prettyprint lang-auto linenums:0 prettyprinted"><span class="str">'
+'</span><span class="pln"> </span><span class="typ">Displays</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> appends </span><span class="kwd">in</span><span class="pln"> an </span><span class="typ">Excel</span><span class="pln"> </span><span class="typ">Cell</span><span class="pln"> the structure containing all the information of an HTTP response </span><span class="kwd">from</span><span class="pln"> the </span><span class="typ">Dollar</span><span class="pln"> </span><span class="typ">Unvierse</span><span class="pln"> API
+</span><span class="str">'
+'</span><span class="pln"> </span><span class="typ">Parameters</span><span class="pln">
+</span><span class="str">' resp structure containing all the information of the Dollar Universe API response
+'</span><span class="pln"> </span><span class="typ">WorksheetName</span><span class="pln"> </span><span class="typ">The</span><span class="pln"> </span><span class="typ">WorkSheet</span><span class="pln"> name of your </span><span class="typ">Excel</span><span class="pln"> file
+</span><span class="str">' row The row number of the Excel Cell in which you want to display the information
+'</span><span class="pln"> col </span><span class="typ">The</span><span class="pln"> column number of the </span><span class="typ">Excel</span><span class="pln"> </span><span class="typ">Cell</span><span class="pln"> </span><span class="kwd">in</span><span class="pln"> which you want to display the information
+</span><span class="str">'
+Public Sub displayResponseAppendInCell(ByVal resp As DUASApiRespObj, _
+ByVal WorksheetName As String, ByVal row As Integer, ByVal col As Integer)</span></pre>
+<br /><br /><span><span><span>Displays and appends in an Excel Cell a response object from the Dollar Universe API</span></span></span><br /><br /><br /><strong class="bbc"><span>Licences</span></strong><br /><span><span><span>We rely on an open library under BSD license called </span></span></span><a class="bbc_url" title="External link" href="http://www.ediy.co.nz/vbjson-json-parser-library-in-vb6-xidc55680.html" rel="nofollow external">VBJson</a><span><span><span> used to parse the JSON responses from DUAS.</span></span></span></div></p>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-md-12 media">
+		  <h3>Media</h3>
+		  <p>[MEDIA]</p>
+		  </div>
+		</div>
+	      </div>
+	      
+	      <div id="contents" class="tab-pane">
+		<div class="row">
+		  <h3>Contents of Package</h3>
+		  <ul>
+		    <li>Dollar_Universe-VBA_Trigger.zip</li>
+		  </ul>
+		  <div class="downloads_buttons" style="margin-top:50px;font-size:1.2em;">
+		    <a class="download_zip dl" href="https://github.com/automic-community/Trigger---Integration-with-MS-Office-using-VBA/zipball/master">Download .zip</a>
+			<br><br>
+		    <a class="download_tar dl" href="https://github.com/automic-community/Trigger---Integration-with-MS-Office-using-VBA/tarball/master">Download .tar</a>  
+		  </div>
+		</div>
+	      </div>
+	      
+	      <div id="compatibility" class="tab-pane">
+		<div class="row">
+		<h3>Compatibility</h3>
+		  <div class="row">
+		    <div class="col-md-6">
+		      <h4 class="comp-product">Platform</h4>
+		      <div class="list">
+			<a href="http://marketplace.automic.com/marketplace/browse#category/Dollar Universe - UniJob">Dollar Universe - UniJob<span class="comma">,</span></a>
+		      </div>
+		    </div>
+		    <div class="col-md-6">
+		      <h4 class="comp-versions">Versions</h4>
+		      <div class="list">
+			 <a href="http://marketplace.automic.com/marketplace/browse#version/6.x">6.x<span class="comma">,</span></a>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-md-6">
+		      <h4 class="comp-platforms">Operating Systems</h4>
+		      <div class="list">
+			 <a href="http://marketplace.automic.com/marketplace/browse#platform/Windows">Windows<span class="comma">,</span></a>
+		      </div>
+		    </div>
+		    <div class="col-md-6">
+		      <h4 class="comp-apps">Applications</h4>
+		      <div class="list">
+			
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	      </div>
+	      
+	      <div id="credits" class="tab-pane">
+		<div class="row">
+		<h3>Created by....</h3>
+		<div>
+		  Created By:  , 
+		</div>
+		</div>
+	      </div>
+	      
+	    </div>
+	    <!-- End of Tabbed Content -->
+	    </div>
+	      
+	    
+	<!-- Pulled out Comment code -->   
+	  
+	  </div>
+	  
+	  <div class="col-md-3 col-md-offset-1" style="top: -33px;">
+	    
+	      <div class="row d-links">
+		<div class="down-t">Downloads</div>
+		<a class="zip_download_link dl" href="https://github.com/Automic-Community/Trigger---Integration-with-MS-Office-using-VBA/zipball/master">Download this project as a .zip file</a>
+		<a class="tar_download_link dl" href="https://github.com/Automic-Community/Trigger---Integration-with-MS-Office-using-VBA/tarball/master">Download this project as a tar.gz file</a>
+	      </div>
+
+	      <div class="row rating">
+
+		<a class="forkme" href="https://github.com/Automic-Community/Trigger---Integration-with-MS-Office-using-VBA">View on GitHub</a>
+		 
+	  	 
+		<div class="social-buttons">
+		  <a target="_blank" class="share-btn twitter" href="http://twitter.com/share?url=http://automic-community.github.io/Trigger---Integration-with-MS-Office-using-VBA&text=Check%20out%20this%20awesome%20App%20on%20the%20%23AutomicCommunity%20eXchange&via=automic">
+		    <i class="fa fa-twitter"></i>
+		  </a>
+		  <a target="_blank" class="share-btn linkedin" href="http://www.linkedin.com/shareArticle?url=url=http://automic-community.github.io/Trigger---Integration-with-MS-Office-using-VBA&title=Trigger - Integration with MS Office using VBA&summary=We have created some VBA libraries (.bas and .cls) in order to ease the use of DUAS triggers for any external system development using VBA.&source=url=http://github.com/automic-community/Trigger---Integration-with-MS-Office-using-VBA">
+		    <i class="fa fa-linkedin"></i>
+		  </a>
+		  <a target="_blank" class="share-btn facebook" href="http://www.facebook.com/sharer/sharer.php?u=http://automic-community.github.io/Trigger---Integration-with-MS-Office-using-VBA">
+		    <i class="fa fa-facebook-square"></i>
+		  </a>
+		  <a target="_blank" class="share-btn google-plus" href="https://plus.google.com/share?url=http://automic-community.github.io/Trigger---Integration-with-MS-Office-using-VBA">
+		    <i class="fa fa-google-plus-square"></i>
+		  </a>
+		  <a target="_blank" class="share-btn email" href="mailto:?subject=Check%20out%20this%20awesome%20App%20on%20the%20%23AutomicCommunity%20eXchange&body=We have created some VBA libraries (.bas and .cls) in order to ease the use of DUAS triggers for any external system development using VBA." >
+		    <i class="fa fa-envelope"></i>
+		  </a>
+		</div>
+
+	      </div>
+	   
+	    
+	    <div class="row tags">
+	      <div class="comp-type">
+		App
+	      </div>
+	      <div class="comp-product">
+		<a href="http://marketplace.automic.com/marketplace/browse#category/Dollar Universe - UniJob">Dollar Universe - UniJob<span class="comma">,</span></a>
+	      </div>
+	      <div class="comp-versions">
+	       <a href="http://marketplace.automic.com/marketplace/browse#version/6.x">6.x<span class="comma">,</span></a>
+	      </div>
+	      <div class="comp-platforms">
+		 <a href="http://marketplace.automic.com/marketplace/browse#platform/Windows">Windows<span class="comma">,</span></a>
+	      </div>
+	      <div class="comp-apps">
+		
+	      </div>
+	    </div>
+	      
+	    <div class="row help">
+		<a class="supported" href="#">Community Supported</a>
+		<div class="ask">
+		  <a href="https://community.automic.com" target="_blank" class="btn">Ask the Community</a>
+		</div>
+		<p>
+		  Converse with your fellow Users in the <a href="http://community.automic.com">Community</a>.
+		</p>
+	    </div>
+	    
+	  </div>
+	
+	</div>
+	
+	<div class="row">
+	  <div class="col-md-3 col-md-offset-9">
+	    <div class="copyright">
+	      <h4>Copyright and License</h4>
+	      <p>
+		Solutions, Templates and other content created by the Automic Community and available on the Automic Marketplace is subject to the standard Community <a href="http://automic.com/community-terms-of-service">Terms of Service</a>. 
+		Automic does not support, maintain or warrant any Solution, Templates and/or other content created by the Automic Community on the Automic Marketplace.
+	      </p>
+	    </div>
+	  </div>
+	</div>
+	
+      </div>
+    </div>
+  
+  <div id="footer">
+  <footer>
+    <div class="container">
+      <!-- FOOTER  -->
+      <div class="row"> 
+	  <div class="copyright">
+	    Package maintained by the <a href="https://github.com/Automic-Community">Automic-Community</a> GitHub Org
+	  </div>
+	  <div>
+	    Published by the <a href="https://community.automic.com">Automic Think Tank</a>
+	  </div>
+      </div>
+    </div>
+  </footer>
+</div>
+  
+    </div>
+  </body>
+</html>
